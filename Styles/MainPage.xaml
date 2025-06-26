@@ -2,26 +2,30 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Styles.MainPage">
-
+    <ContentPage.Resources>
+        <Style TargetType="VerticalStackLayout">
+            <Setter Property="VerticalOptions"
+                    Value="Center"/> 
+            <Setter Property="Padding"
+                    Value="30,0"/>
+            <Setter Property="Spacing"
+                    Value="25"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" 
+                    Value="#323031"/>
+            <Setter Property="FontAttributes"
+                    Value="Bold" />
+            <Setter Property="FontSize"
+                    Value="Large" />
+            <Setter Property="TextColor"
+                    Value="#ffc857"/>
+        </Style>
+    </ContentPage.Resources>
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-
-
-            <Button
-                BackgroundColor="#323031"
-                FontAttributes="Bold"
-                FontSize="Large"
-                Text="LOGIN"
-                TextColor="#ffc857" />
-
-            <Button
-                BackgroundColor="#323031"
-                FontAttributes="Bold"
-                FontSize="Large"
-                Text="VISIT WEBSITE"
-                TextColor="#ffc857" />  
+        <VerticalStackLayout>
+            <Button  Text="LOGIN" />
+            <Button  Text="VISIT WEBSITE" />  
 
         </VerticalStackLayout>
     </ScrollView>
