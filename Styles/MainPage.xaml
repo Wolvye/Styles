@@ -25,6 +25,8 @@
         </Style>
     </ContentPage.Resources>
     <ScrollView>
+        <ScrollView.Resources>
+        </ScrollView.Resources>
         <VerticalStackLayout>
             <Button  Text="LOGIN" />
             <Button  Text="VISIT WEBSITE" />  
