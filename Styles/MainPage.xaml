@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Styles.MainPage">
     <ContentPage.Resources>
+        <Color x:Key="bgColor">Red</Color>
+        <Color x:Key="textColor">yellow</Color>
         <Style TargetType="VerticalStackLayout">
             <Setter Property="VerticalOptions"
                     Value="Center"/> 
@@ -13,13 +15,13 @@
         </Style>
         <Style TargetType="Button">
             <Setter Property="BackgroundColor" 
-                    Value="#323031"/>
+                    Value="{StaticResource bgColor}"/>
             <Setter Property="FontAttributes"
                     Value="Bold" />
             <Setter Property="FontSize"
                     Value="Large" />
             <Setter Property="TextColor"
-                    Value="#ffc857"/>
+                    Value="{StaticResource textCoolor}"/>
         </Style>
     </ContentPage.Resources>
     <ScrollView>
