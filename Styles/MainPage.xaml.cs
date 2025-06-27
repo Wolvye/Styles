@@ -7,6 +7,7 @@
         public MainPage()
         {
             InitializeComponent();
+            var layout = new VerticalStackLayout();
         }
 
     
