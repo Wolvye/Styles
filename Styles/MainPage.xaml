@@ -5,25 +5,7 @@
     <ContentPage.Resources>
         <Color x:Key="bgColor">Red</Color>
         <Color x:Key="textColor">yellow</Color>
-        <Style TargetType="StackBase"
-               ApplyToDerivedTypes="True">
-            <Setter Property="VerticalOptions"
-                    Value="Center"/> 
-            <Setter Property="Padding"
-                    Value="30,0"/>
-            <Setter Property="Spacing"
-                    Value="25"/>
-        </Style>
-        <Style TargetType="Button">
-            <Setter Property="BackgroundColor" 
-                    Value="{StaticResource bgColor}"/>
-            <Setter Property="FontAttributes"
-                    Value="Bold" />
-            <Setter Property="FontSize"
-                    Value="Large" />
-            <Setter Property="TextColor"
-                    Value="{StaticResource textCoolor}"/>
-        </Style>
+       
     </ContentPage.Resources>
     <ScrollView>
         <ScrollView.Resources>
