@@ -12,4 +12,4 @@ public partial class DynamicStylesPage : ContentPage
 		Application.Current.Resources.TryGetValue("specialButton", out var retVal);
 		Resources["dynamicStyle"] = (Style)retVal; ;
     }
-}
+} 
